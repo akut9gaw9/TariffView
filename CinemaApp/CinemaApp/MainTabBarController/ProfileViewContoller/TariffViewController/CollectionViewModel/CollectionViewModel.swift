@@ -7,8 +7,6 @@
 
 import Foundation
 
-/// Тут видел возможность дженериков, но не сообразил как реализовать
-
 enum CollectionViewModel {
     case tariffs([TariffModel])
     case description([TariffModel])

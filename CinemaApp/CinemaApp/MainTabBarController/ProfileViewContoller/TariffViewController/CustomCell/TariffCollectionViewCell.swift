@@ -150,7 +150,6 @@ private extension TariffCollectionViewCell {
         tariffUIViewForSelectedLabel.backgroundColor = UIColor(named: "TariffPriceColor")
         tariffDaysIsSelectedLabel.textColor = .white
         layer.borderWidth = 1
-        
         layer.shadowOpacity = 1.0
         
     }

@@ -23,9 +23,7 @@ final class TariffViewModel {
     }
     
     // MARK: Fetch data from Network Service
-    
-    /// Мне вообще эта штука не нравится, но на тот момент, когда я писал это - я вообще чет не мог придумать, как можно было написать по другому. Но я думаю мне все равно плюс за сообразительность, потому что вышел из ситуации и решил "проблему". Буду ждать соответственно фидбэка по этому комменту, ты же по-любому его увидишь :))
-    
+
     private func fetchData() {
         let result = networkService.getData()
         sections.append(.tariffs(result.map({TariffModel(numberOfDays: $0.amountOfDays, tariffPrice: $0.price, tariffDescription: $0.description, tariffOptions: $0.options)})))

@@ -10,6 +10,7 @@ import UIKit
 class HeaderCollectionReusableView: UICollectionReusableView {
     
     // MARK: Variables
+    
     static let identifier = "HeaderCollectionReusableView"
     
     // MARK: UI Components
